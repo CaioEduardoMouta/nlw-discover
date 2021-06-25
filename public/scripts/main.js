@@ -4,7 +4,6 @@ const modal = Modal()
 
 const modalTitle = document.querySelector('.modal h2')
 const modalDescription = document.querySelector('.modal p')
-
 const modalButton = document.querySelector(".modal button")
 
 const checkButtons = document.querySelectorAll(".actions a.check")
@@ -32,12 +31,13 @@ deleteButton.forEach(button => {
      const questionId = event.target.dataset.id
 
      const form = document.querySelector(".modal form")
-     form.setAttribute("action", `/room/${roomId}/${questionId}/:action`)
+     form.setAttribute("action", `/question/${roomId}/${questionId}/${slug}`)
      
      modalTitle.innerHTML = `${text} esta pergunta`
      modalDescription.innerHTML = `Tem certeza que deseja ${text.toLowerCase()} essa pergunta`
      modalButton.innerHTML = `Sim, ${text.toLowerCase()} esta pergunta`
      check ? modalButton.classList.remove("red") : modalButton.classList.add("red")
+     
      modal.open()
    
  }
