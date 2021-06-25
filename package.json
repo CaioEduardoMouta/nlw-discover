@@ -1,0 +1,19 @@
+{
+  "name": "NLWDiscover",
+  "version": "1.0.0",
+  "description": "Projeto da Rockeseat NLW",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "keywords": [],
+  "author": "Sir Caio Mouta",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
